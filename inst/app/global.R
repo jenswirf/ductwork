@@ -104,7 +104,8 @@ github_link = function(paths) {
     path = paths[p]
     rel_path = str_split(path, "/etl/") %>% unlist
 
-    link = sprintf("https://github.com/tictail/data/blob/master/etl/%s", rel_path[2])
+    #TODO: Need to reformat this link
+    link = sprintf("https://github.com/data/blob/master/etl/%s", rel_path[2])
 
     if (is.null(link))
       link = ""

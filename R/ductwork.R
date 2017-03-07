@@ -5,7 +5,7 @@ init = function() {
   Sys.setlocale('LC_ALL','C')
 
   # Load config file
-  config <<- read_config("/data/ductwork/ductwork.config")
+  config <<- read_config("ductwork/ductwork.config")
 
   # Initiate statekeeper
   try({init_statekeeper(config$statekeeper)})
